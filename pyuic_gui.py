@@ -75,7 +75,7 @@ class DlgMain(QDialog):
 
     #####  Event handlers
     def evt_btnPyuic_clicked(self):
-        sFile, sExt = QFileDialog.getOpenFileName(self, "Pyuic5", os.getcwd()+"/venv/bin", "Executable Files (*)")
+        sFile, sExt = QFileDialog.getOpenFileName(self, "Pyuic5", os.getcwd()+"/usr/bin", "Executable Files (*)")
         if sFile:
             self.ledPyuic.setText(sFile)
 
